@@ -24,28 +24,20 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+    
+    <div>
+      <div id="monitor">
+          <div id="bezel">
+              <div id="crt" class="off" onClick="handleClick(event)"> 
+              <p style={{fontSize: '50px', color: '#ede0e0'}}>where</p>
+                  <div class="scanline"></div>
+                  <div class="terminal" style={{fontSize: '50px', color: '#ede0e0'}}>
+                    <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </>
+    </div>
   )
 }
 
