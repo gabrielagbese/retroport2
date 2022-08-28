@@ -213,14 +213,23 @@ body {
   }
 }
 #crt {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
   border: thin solid black;
   animation: textShadow 5s infinite;
-  background: radial-gradient(transparent, black), rgba(204, 213, 213, 0.074);
-  height: 99vh;
+  background: radial-gradient(transparent, black), rgba(204, 213, 212, 0.111);
+  height: 98.5vh;
+  padding: 5px;
+}
+
+#crt::-webkit-scrollbar{
+  display: none;
 }
 
 
 .scanline {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
   width: 100%;
   height: 100px;
   z-index: 8;
@@ -233,7 +242,11 @@ body {
   opacity: 0.15;
   position: absolute;
   bottom: 100%;
-  animation: scanline 10s linear infinite;
+  animation: scanline 7s linear infinite;
+}
+
+.scanline::-webkit-scrollbar{
+  display: none;
 }
 
 @keyframes scanline {
@@ -254,5 +267,18 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+#bezel {
+  position: relative;
+  width: 100;
+  height: 100vh;
+  border: 40px solid transparent;
+  box-sizing: border-box;
+  border-image-source: url(../images/border.png);
+  border-image-slice: 60 fill;
+  border-image-outset: 0;
+  background-color: black;
+  overflow: hidden;
 }
 

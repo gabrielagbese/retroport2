@@ -28,10 +28,9 @@ const Layout = ({ children }) => {
     <div>
       <div id="monitor">
           <div id="bezel">
-              <div id="crt" class="off" onClick="handleClick(event)"> 
-              <p style={{fontSize: '50px', color: '#ede0e0'}}>where</p>
+              <div id="crt" > 
                   <div class="scanline"></div>
-                  <div class="terminal" style={{fontSize: '50px', color: '#ede0e0'}}>
+                  <div class="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
                     <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
                   </div>
               </div>
