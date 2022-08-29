@@ -217,8 +217,8 @@ body {
   scrollbar-width: none; 
   border: thin solid black;
   animation: textShadow 5s infinite;
-  background: radial-gradient(transparent, black), rgba(204, 213, 212, 0.111);
-  height: 98.5vh;
+  background: radial-gradient(transparent, rgb(167, 1, 1)), rgba(210, 9, 9);
+  height: 100vh;
   padding: 5px;
 }
 
@@ -271,14 +271,18 @@ body {
 
 #bezel {
   position: relative;
-  width: 100;
-  height: 100vh;
-  border: 40px solid transparent;
+  width: 100%;
+  height: 100%;
+  /* border: 40px solid transparent; */
   box-sizing: border-box;
+  /* 
   border-image-source: url(../images/border.png);
-  border-image-slice: 60 fill;
-  border-image-outset: 0;
-  background-color: black;
+  border-image-slice: 80 fill;
+  border-image-outset: 0; */
+  background-color: rgb(1, 1, 1) ;
+  mask-image: url(../images/border.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
   overflow: hidden;
 }
 

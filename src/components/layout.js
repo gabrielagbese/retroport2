@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import samp from "./gif.gif"
 
 import Header from "./header"
 import "./layout.css"
@@ -31,7 +32,8 @@ const Layout = ({ children }) => {
               <div id="crt" > 
                   <div class="scanline"></div>
                   <div class="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
-                    <p>The Quick Brown Fox Jumps Over The Lazy Dog</p>
+                    <h1>The Quick Brown Fox Jumps Over The Lazy Dog in abakaliki next year</h1>
+
                   </div>
               </div>
           </div>
