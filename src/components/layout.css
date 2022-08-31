@@ -144,7 +144,7 @@ body {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 1.5s infinite;
+  animation: flicker 0.15s infinite;
 }
 
 @keyframes textShadow {
@@ -217,8 +217,8 @@ body {
   scrollbar-width: none; 
   border: thin solid black;
   animation: textShadow 5s infinite;
-  background: radial-gradient(transparent, rgb(167, 1, 1)), rgba(210, 9, 9);
-  height: 100vh;
+  background: radial-gradient(transparent, rgb(15, 15, 15)), #0e0e0e;
+  height: 98vh;
   padding: 5px;
 }
 
@@ -273,15 +273,9 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /* border: 40px solid transparent; */
-  box-sizing: border-box;
-  /* 
-  border-image-source: url(../images/border.png);
-  border-image-slice: 80 fill;
-  border-image-outset: 0; */
-  background-color: rgb(1, 1, 1) ;
+  aspect-ratio: inherit;
   mask-image: url(../images/border.png);
-  mask-size: contain;
+  mask-size: 100% 100%;
   mask-repeat: no-repeat;
   overflow: hidden;
 }

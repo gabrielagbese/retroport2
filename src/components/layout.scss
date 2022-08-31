@@ -271,7 +271,7 @@ body {
 
 #bezel {
   position: relative;
-  width: 100%;
+  width: 600px;
   height: 100%;
   /* border: 40px solid transparent; */
   box-sizing: border-box;
@@ -280,9 +280,9 @@ body {
   border-image-slice: 80 fill;
   border-image-outset: 0; */
   background-color: rgb(1, 1, 1) ;
-  mask-image: url(../images/border.png);
+  mask-image: url(../images/bofrder.png);
   mask-size: contain;
   mask-repeat: no-repeat;
   overflow: hidden;
 }
-
+ 

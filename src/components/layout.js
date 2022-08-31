@@ -30,9 +30,12 @@ const Layout = ({ children }) => {
       <div id="monitor">
           <div id="bezel">
               <div id="crt" > 
-                  <div class="scanline"></div>
-                  <div class="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
-                    <h1>The Quick Brown Fox Jumps Over The Lazy Dog in abakaliki next year</h1>
+                  <div className="scanline"></div>
+                  <div className="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
+                  <div style={{width: '400px',height:  '100px', backgroundColor: 'green',}}></div>
+                    <h1>The Quick Brown Fox Jumps Over The Lazy Dog next year</h1>
+                    <div style={{width: '300px',height:  '300px', backgroundColor: 'red',}}></div>
+                    <div style={{width: '400px',height:  '300px', backgroundColor: 'blue',}}></div>
 
                   </div>
               </div>
