@@ -29,13 +29,13 @@ const Layout = ({ children }) => {
     <div>
       <div id="monitor">
           <div id="bezel">
+              <div className="noise"></div>
               <div id="crt" > 
                   <div className="scanline"></div>
                   <div className="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
-                  <div style={{width: '400px',height:  '100px', backgroundColor: 'green',}}></div>
+                  <div style={{width: '400px',height:  '100px' ,opacity: 0.5}}></div>
                     <h1>The Quick Brown Fox Jumps Over The Lazy Dog next year</h1>
-                    <div style={{width: '300px',height:  '300px', backgroundColor: 'red',}}></div>
-                    <div style={{width: '400px',height:  '300px', backgroundColor: 'blue',}}></div>
+                    <div className="image"></div>
 
                   </div>
               </div>
