@@ -33,10 +33,13 @@ const Layout = ({ children }) => {
               <div id="crt" > 
                   <div className="scanline"></div>
                   <div className="terminal" style={{fontSize: '30px', color: '#ede0e0'}}>
-                  <div style={{width: '400px',height:  '100px' ,opacity: 0.5}}></div>
-                    <h1>The Quick Brown Fox Jumps Over The Lazy Dog next year</h1>
-                    <div className="image"></div>
-
+                  <div style={{width: '100vw',height:  '100vh' , display: 'flex',alignItems: 'center',justifyContent: 'center',}}>
+                    <div className="image">
+                    <h1>land</h1>
+                    </div>
+                  </div>
+                  <h1>till</h1>
+                    
                   </div>
               </div>
           </div>
